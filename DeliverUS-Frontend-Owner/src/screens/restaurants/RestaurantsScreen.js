@@ -23,9 +23,7 @@ export default function RestaurantsScreen ({ navigation }) {
       } catch (error) {
         showMessage({
           message: `There was an error while retrieving restaurants. ${error} `,
-          type: 'error',
-          style: GlobalStyles.flashStyle,
-          titleStyle: GlobalStyles.flashTextStyle
+          type: 'error'
         })
       }
     }
